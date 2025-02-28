@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Mauro",
+  lastName: "Lopez",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Senior Web Developer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/Argentina/Buenos_Aires", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Spanish", "Portguese", "German"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -26,15 +26,15 @@ const newsletter = {
 const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
+  // {
+  //   name: "GitHub",
+  //   icon: "github",
+  //   link: "https://github.com/once-ui-system/nextjs-starter",
+  // },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/mauro-lopez-5a2845137/",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:mauro.javier.lopez@gmail.com",
   },
 ];
 
@@ -52,11 +52,12 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <> Senior Web Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I’m a senior web developer specializing in Webflow, Elementor, React,
+      HTML, CSS, and responsive design, with a passion for turning ideas into{" "}
+      <InlineCode>dynamic digital experiences</InlineCode>.
     </>
   ),
 };
@@ -81,9 +82,12 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        As a Software Engineer, my goal is to continually master new
+        technologies and effectively apply my skills to real-world projects. I
+        specialize in event-driven microservice architectures and scalable web
+        systems. Over the years, I have contributed to diverse projects ranging
+        from e-commerce platforms to real estate applications, ensuring each
+        solution meets modern standards of design and performance.”{" "}
       </>
     ),
   },
@@ -92,17 +96,106 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Buenos Bytes",
+        timeframe: "Feb 2024 – Jan 2025",
+        role: "WordPress & Webflow Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed and maintained dentistry-focused websites using WordPress
+            and Webflow, leveraging Elementor and other website builders to
+            create modern, responsive designs.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Collaborated with dental practices to craft user-friendly,
+            marketing-optimized digital experiences, enhancing client engagement
+            and online presence.
+          </>,
+          <>
+            Implemented best practices for performance, SEO, and accessibility,
+            ensuring each site met high standards of quality and functionality.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "AutoFlow",
+        timeframe: "Nov 2022 – Feb 2024",
+        role: "Staff Engineer",
+        achievements: [
+          <>
+            Developed a comprehensive e-commerce platform for car dealerships,
+            streamlining inventory management.
+          </>,
+          <>
+            Integrated AI-driven image enhancement to optimize listing visuals
+            and operational efficiency.
+          </>,
+          <>
+            Engineered robust backend solutions with Django and FastAPI, paired
+            with a user-friendly React interface.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "Ungga",
+        timeframe: "Jul 2021 – Aug 2022",
+        role: "Staff Engineer",
+        achievements: [
+          <>
+            Spearheaded the development of a real estate web application
+            targeting the Mexican market.
+          </>,
+          <>
+            Leveraged Django, GraphQL, React, and Next.js to deliver a scalable,
+            high-performance solution.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "DinoCloud",
+        timeframe: "Jul 2020 – Aug 2022",
+        role: "Software Engineer",
+        achievements: [
+          <>
+            Led the migration of a SaaS platform for car dealerships to AWS,
+            establishing robust cloud-based services.
+          </>,
+          <>
+            Developed customized websites using AWS services, Django, and modern
+            front-end frameworks.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "Hipcam",
+        timeframe: "Aug 2018 – Jul 2020",
+        role: "Backend Team Lead",
+        achievements: [
+          <>
+            Led the backend team in a major restructuring initiative,
+            transitioning from an AWS-hosted private media server to an in-house
+            developed solution.
+          </>,
+          <>
+            Implemented internationalization and established local testing by
+            effectively mocking AWS services, ensuring robust and
+            region-independent performance.
+          </>,
+          <>
+            Decomposed a monolithic architecture into modular microservices,
+            significantly enhancing scalability, maintainability, and deployment
+            efficiency.
           </>,
         ],
         images: [
@@ -116,17 +209,17 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Ministry of HealthCare, City of Buenos Aire",
+        timeframe: "Jun 2016 – Jul 2018",
+        role: "Fullstack Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Enhanced the Health Information System focusing on Electronic
+            Medical Records.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Web development best practices, bug fixing, and feature
+            enhancements.
           </>,
         ],
         images: [],
@@ -138,12 +231,14 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Buenos Aires",
+        description: <>Bachelor’s in Computer Science.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of Buenos Aires",
+        description: (
+          <>Bachelor’s in Mathematical Science (Two years completed)</>
+        ),
       },
     ],
   },
@@ -153,7 +248,9 @@ const about = {
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        description: (
+          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -172,7 +269,9 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: (
+          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
