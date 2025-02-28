@@ -13,7 +13,7 @@ const person = {
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -62,6 +62,145 @@ const home = {
   ),
 };
 
+const technical = {
+  display: true, // set to false to hide this section
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "Figma",
+      years: "2+ years",
+      description: (
+        <>
+          Proficient in prototyping with Figma, enabling rapid design iterations
+          and effective collaboration.
+        </>
+      ),
+      images: [
+        // { src: "/images/skills/figma-01.jpg", alt: "Figma design interface", width: 16, height: 9 },
+        // { src: "/images/skills/figma-02.jpg", alt: "Collaborative design in Figma", width: 16, height: 9 },
+      ],
+    },
+    {
+      title: "Next.js",
+      years: "3+ years",
+      description: (
+        <>
+          Experienced in building modern web applications using Next.js,
+          integrating with UI frameworks and backend services.
+        </>
+      ),
+      images: [
+        // { src: "/images/skills/nextjs-01.jpg", alt: "Next.js application structure", width: 16, height: 9 },
+      ],
+    },
+    {
+      title: "Webflow",
+      years: "4+ years",
+      description: (
+        <>
+          Skilled in designing and developing responsive websites with Webflow,
+          leveraging its visual development capabilities for over 4 years.
+        </>
+      ),
+      images: [
+        // { src: "/images/skills/webflow-01.jpg", alt: "Webflow design dashboard", width: 16, height: 9 },
+        // { src: "/images/skills/webflow-02.jpg", alt: "Responsive design in Webflow", width: 16, height: 9 },
+      ],
+    },
+    {
+      title: "WordPress",
+      years: "4+ years",
+      description: (
+        <>
+          Proficient in creating and managing WordPress sites for over 4 years,
+          utilizing various themes and plugins to enhance functionality and user
+          experience.
+        </>
+      ),
+      images: [
+        // { src: "/images/skills/wordpress-01.jpg", alt: "WordPress dashboard interface", width: 16, height: 9 },
+        // { src: "/images/skills/wordpress-02.jpg", alt: "Customizing WordPress themes", width: 16, height: 9 },
+      ],
+    },
+    {
+      title: "Programming Languages",
+      years: "5+ years",
+      description: (
+        <>
+          Experienced in a wide range of languages including Python, JavaScript,
+          Java, HTML5, Sass, CSS, C++, C, Smalltalk, Prolog, Haskell, R, SQL,
+          and x86 Assembly.
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "Databases",
+      years: "3+ years",
+      description: (
+        <>
+          Skilled in working with databases such as DynamoDB, Clickhouse,
+          MongoDB, MySQL, PostgreSQL, Redis, and LanceDB.
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "Tools & Frameworks",
+      years: "3+ years",
+      description: (
+        <>
+          Proficient in using tools and frameworks including Django, Django Rest
+          Framework, GraphQL, Graphene, WebSocket, Redis Cache, Redis
+          Publish/Subscribe, Node, Express, Socket.IO, Pytest, Unittest, Async
+          IO, AngularJS, React, Coolify, Next.js, jQuery, Jasmine, Git, Npm,
+          Gulp, Bootstrap, Ansible, Terraform, Kubernetes, Docker, Kafka,
+          Celery, RabbitMQ, Redis, Sentry, New Relic, Scikit-learn, Pandas,
+          Numpy, Langchain, CrewAI, Copilotkit, and Apache Flink.
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "AWS Services",
+      years: "2+ years",
+      description: (
+        <>
+          Experienced with a range of AWS services including CloudFront, Lambda
+          Edge, Lambda, SQS, SNS, DynamoDB, S3, ElastiCache, ASG, ELB, VPC, AMI,
+          Aurora, EventBridge, Pinpoint, Route53, X-Ray, CloudWatch, SageMaker,
+          API Gateway, Bedrock, Rekognition, AppSync, EC2, ECR, ECS, AWS Glue,
+          Apache Spark, AWS Lake Formation, and Firehose.
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "Familiar With",
+      years: "2+ years",
+      description: (
+        <>
+          Familiar with additional platforms and tools such as AWS, Google Cloud
+          Platform, Zeplin, Invision, Taiga, Open Project, Jira, GitLab, and
+          GitHub.
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "General Skills",
+      years: "5+ years",
+      description: (
+        <>
+          Strong foundation in Linear Algebra, Data Structures, Algorithms,
+          Object Oriented Programming, and Data Science.
+        </>
+      ),
+      images: [],
+    },
+  ],
+};
+
 const about = {
   label: "About",
   title: "About me",
@@ -75,7 +214,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendar.google.com/calendar/u/0?cid=bWF1cm8uamF2aWVyLmxvcGV6QGdtYWlsLmNvbQ",
   },
   intro: {
     display: true,
@@ -200,12 +339,12 @@ const about = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
@@ -242,48 +381,7 @@ const about = {
       },
     ],
   },
-  technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
+  technical: technical,
 };
 
 const blog = {
